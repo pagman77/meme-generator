@@ -48,20 +48,29 @@ function handleSubmit(evt){
 
   addMeme(imgLink, topText, bottomText);
   showMemes();
+  document.getElementById("meme-form").reset()
 }
 
-function memeClick(){
+function memeClick(evt){
   console.log("memeClick")
+
+  let id = Number(evt.target.id.replace("meme-", ""));
+  deleteMeme(id);
 }
 
-function memeHover(){
-  console.log("memeHover")
+function memeHover(evt){
+  console.log("memeHover");
+  let deleteBox = document.getElementById("meme")
+
 
 }
 
-function deleteMeme(){
+function deleteMeme(id){
   console.log("deleteMeme")
+
+  memes.splice(id, 1);
+  showMemes();
 }
 
 document.getElementById("meme-form").addEventListener("submit", handleSubmit);
-
+document.getElementById("meme").addEventListener("click", memeClick);

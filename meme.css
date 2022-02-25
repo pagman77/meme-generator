@@ -1,8 +1,32 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+#main-heading{
+    border-radius: 20px;
+}
+#main-heading h1{
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
 #meme-form hr{
     width: 75%;
     margin-top: 8px;
 }
 
+.form-label{
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    border-radius: 10px;
+
+}
 .meme {
     position: relative;
 }
@@ -16,13 +40,21 @@
 
 }
 
+#submit-button{
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
 .top-text, .bottom-text{
     position: absolute;
     left: 22px;
     right: 22px;
     font-size: 2em;
     text-transform: uppercase;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     text-shadow:
      -1px -1px 0 #000,
