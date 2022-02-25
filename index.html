@@ -24,18 +24,18 @@
 
   <!-- FORM -->
   <section>
-    <div id="meme-form" class="container-lg mt-5">
+    <div class="container-lg mt-5">
       <div class="row justify-content-center align-items-center">
-        <form>
+        <form id="meme-form">
 
           <!-- IMAGE LINK-->
           <div class="col">
-            <label for="imgage-link" class="form-label lead">Link to your image:</label>
+            <label for="image-link" class="form-label lead">Link to your image:</label>
               <div class="mb-4 input-group">
                 <span class="input-group-text bg-info">
                 <i class="bi bi-link"></i>
                 </span>
-                <input type="url" class="form-control lead" id="image-link" placeholder="Y U NO LINK PICTURE">
+                <input name="image" type="url" class="form-control lead" id="image-link" placeholder="Y U NO LINK PICTURE">
               </div>
           </div>
 
@@ -46,7 +46,7 @@
                 <span class="input-group-text bg-info">
                 <i class="bi bi-arrow-up-square"></i>
                 </span>
-                <input type="text" class="form-control" id="top-text" placeholder="The text on the top...">
+                <input name="top" type="text" class="form-control" id="top-text" placeholder="The text on the top...">
               </div>
           </div>
 
@@ -57,8 +57,13 @@
                 <span class="input-group-text bg-info">
                 <i class="bi bi-arrow-down-square"></i>
                 </span>
-                <input type="text" class="form-control" id="bottom-text" placeholder="...sets up the punchline">
+                <input name="bottom" type="text" class="form-control" id="bottom-text" placeholder="...sets up the punchline">
                </div>
+          </div>
+
+          <!-- SUBMIT BUTTON-->
+          <div class="mb-4 mt-5 text-center">
+            <button type="submit" class="btn-lg btn-info lead text-light">Submit</button>
           </div>
 
           </form>
@@ -70,18 +75,21 @@
   <!-- MEMES-->
 
   <section>
-    <div class="container-lg bg-light">
-      <div class="row justify-content-center align-items-center">
-        <div id="meme">
-        <!-- APPEND TO DOM WITH JS TO ADD MEMES IN 2 WIDE FLEX FORMAT-->
-        </div>
+    <div class="container-lg mb-5 mt-5" >
+      <div class="row justify-content-center align-items-center" id="meme">
+
+   <!--      <div id="meme" class="text-center col-md-5"><img class="img-thumbnail rounded" src="https://images.theconversation.com/files/38926/original/5cwx89t4-1389586191.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip">
+            <span class="top-text d-block">makes a meme generator adding words to check for wrap</span>
+            <span class="bottom-text d-block">doesn't break DOM adding more words to check for bottom wrap</span>
+            </div> -->
+        <!-- APPEND TO DOM WITH JS TO ADD MEMES IN 2 <WIDE FLEX FORMAT-->
       </div>
     </div>
   </section>
 
   <!-- FOOTER-->
 
-  <footer class="footer mt-auto py-3 bg-dark fixed-bottom" id="footer">
+  <footer class="footer mt-auto py-3 bg-dark" id="footer">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 text-start mt-2 text-sm-center">
