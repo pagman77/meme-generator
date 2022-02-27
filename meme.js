@@ -58,19 +58,14 @@ function memeClick(evt){
   deleteMeme(id);
 }
 
-function memeHover(evt){
-  console.log("memeHover");
-  let deleteBox = document.getElementById("meme")
-
-
-}
-
 function deleteMeme(id){
   console.log("deleteMeme")
 
-  memes.splice(id, 1);
-  showMemes();
+    memes.splice(id, 1);
+    showMemes();
 }
+
+
 
 document.getElementById("meme-form").addEventListener("submit", handleSubmit);
 document.getElementById("meme").addEventListener("click", memeClick);

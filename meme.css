@@ -33,10 +33,24 @@ body{
 
 #meme img{
     opacity: .8;
+    width: 400px;
+    height: 400px;
 }
 
-#meme div:hover {
-    opacity: .25;
+#meme div:hover:after {
+    opacity: .50;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "\274c";
+    font-size: 250px;
+    color: #FFF;
+    line-height: 400px;
+    text-align: center;
+    vertical-align: center;
 
 }
 
@@ -70,4 +84,3 @@ body{
 .top-text{
     top: 8px;
 }
-
