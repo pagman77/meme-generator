@@ -84,3 +84,20 @@ body{
 .top-text{
     top: 8px;
 }
+
+#footer span{
+    font-size: 1.5vw;
+}
+
+
+@media (max-width: 767px) {
+    #copy, #social{
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    }
+    #copy{
+        margin-bottom: 8px;
+    }
+
+ }
